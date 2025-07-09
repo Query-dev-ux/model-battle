@@ -1,14 +1,13 @@
 name = "model-battle"
+main = "functions/api/[[route]].ts"
 compatibility_date = "2024-01-01"
 
 [build]
 command = "npm run build"
-dist = "dist"
 watch_dir = "src"
 
 [site]
 bucket = "dist"
-entry-point = "functions/api/[[route]].ts"
 
 [env.production]
 name = "model-battle-prod"
