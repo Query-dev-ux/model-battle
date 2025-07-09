@@ -8,9 +8,13 @@ watch_dir = "src"
 
 [site]
 bucket = "dist"
+include = ["**/*"]
+exclude = []
 
 [env.production]
 name = "model-battle-prod"
+workers_dev = true
 
 [env.staging]
-name = "model-battle-staging" 
+name = "model-battle-staging"
+workers_dev = true 
